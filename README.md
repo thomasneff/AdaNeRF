@@ -1,8 +1,20 @@
 # AdaNeRF: Adaptive Sampling for Real-time Rendering of Neural Radiance Fields
+ [Andreas Kurz](https://online.tugraz.at/tug_online/visitenkarte.show_vcard?pPersonenGruppe=3&pPersonenId=D715516087483BD3)\*<sup>1</sup>,
+ [Thomas Neff](https://thomasneff.github.io/)\*<sup>1</sup>,
+ [Zhaoyang Lv](https://lvzhaoyang.github.io/)<sup>2</sup>,
+ [Michael Zollhöfer](https://zollhoefer.com/)<sup>2</sup>,
+ [Markus Steinberger](https://www.markussteinberger.net/)<sup>1</sup>
+
+ <sup>1</sup>Graz University of Technology, <sup>2</sup>Reality Labs Research  
+  \*denotes equal contribution  
+in ECCV 2022 (to appear)
 
 <img src='adanerf_teaser.png'/>
 
 ### :warning: [Project Page]() | [Video]() | [Presentation]() | [Paper]() | [Data]()
+
+
+
 
 ### Licensing
 The majority of this project is licensed under CC-BY-NC, except for adapted third-party code, which is available under separate license terms:
