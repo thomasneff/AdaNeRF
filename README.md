@@ -11,7 +11,7 @@ in ECCV 2022 (to appear)
 
 <img src='adanerf_teaser.png'/>
 
-### :warning: [Project Page](https://thomasneff.github.io/adanerf/) | [Paper]()
+### :warning: [Project Page](https://thomasneff.github.io/adanerf/) | [Paper (ArXiV)](https://arxiv.org/abs/2207.10312)
 
 ### Licensing
 The majority of this project is licensed under CC-BY-NC, except for adapted third-party code, which is available under separate license terms:
