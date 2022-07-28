@@ -88,10 +88,10 @@ The complete example commands to perform dense as well as fine training for an A
 
 ```bash
 python train.py -c ../configs/dense_training.ini --data /data/classroom/ --logDir /data/output_results/  --device 0 --lossWeights 0.01 --lossWeights 1.0
-python train.py -c ../configs/fine_training.ini --data /data/classroom/ --logDir /data/output_results/ --device 0 --lossWeights 0.01 --lossWeights 1.0 --preTrained /data/output_results/ --preTrained /data/output_results/ --adaptiveSamplingThreshold 0.2 --numRayMarchSamples 8 --numRayMarchSamples 8
+python train.py -c ../configs/fine_training.ini --data /data/classroom/ --logDir /data/output_results/ --device 0 --lossWeights 0.01 --lossWeights 1.0 --preTrained /data/output_results/ --preTrained /data/output_results/ --adaptiveSamplingThreshold 0.2 --numRaymarchSamples 8 --numRaymarchSamples 8
 ```
 
-(Important to note here is that we pass numRayMarchSamples and preTrained twice - the first value is actually ignored for numRayMarchSamples since the first network in this particular config file does not use raymarching, but certain config options, like preTrained, are specified per network.)
+(Important to note here is that we pass numRaymarchSamples and preTrained twice - the first value is actually ignored for numRaymarchSamples since the first network in this particular config file does not use raymarching, but certain config options, like preTrained, are specified per network.)
 
 #### Memory
 As AdaNeRF trains both the adaptive sampling network and the shading network concurrently, the memory requirements during the dense training are very high.
@@ -115,7 +115,7 @@ For running just an inference pass for all the test images and for a given video
 This also takes the same arguments and configuration files as `src/train.py` does, so following the example for the training command, you can use `src/test.py` as follows:
 
 ```bash
-python test.py -c ../configs/fine_training.ini --data /data/classroom/ --logDir /data/output_results/ --device 0 --lossWeights 0.01 --lossWeights 1.0 --adaptiveSamplingThreshold 0.2 --numRayMarchSamples 8 --numRayMarchSamples 8 --camPath cam_path_rotate --outputVideoName cam_path_rotate --videoFrames 300
+python test.py -c ../configs/fine_training.ini --data /data/classroom/ --logDir /data/output_results/ --device 0 --lossWeights 0.01 --lossWeights 1.0 --adaptiveSamplingThreshold 0.2 --numRaymarchSamples 8 --numRaymarchSamples 8 --camPath cam_path_rotate --outputVideoName cam_path_rotate --videoFrames 300
 ```
 
 (In this case no preTrained arguments are necessary, as the network should already be trained and does not have to load the model parameters of the densely trained network.)
