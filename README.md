@@ -134,10 +134,14 @@ To aggregate the resulting outputs (MSE, SSIM, FLIP, FLOP / Pixel, Number of Par
 
 If you find this repository useful in any way or use/modify AdaNeRF in your research, please consider citing our paper:
 
-:warning:
 
 ```bibtex
-TODO
+@inproceedings{kurz-adanerf2022,
+				title = {AdaNeRF: Adaptive Sampling for Real-time Rendering of Neural Radiance Fields},
+				author = {Kurz, Andreas and Neff, Thomas and Lv, Zhaoyang and Zollh\"{o}fer, Michael and Steinberger, Markus},
+				booktitle = {European Conference on Computer Vision (ECCV)},
+				year = {2022},
+			}
 ```
 
 
