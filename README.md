@@ -11,7 +11,7 @@ in ECCV 2022 (to appear)
 
 <img src='adanerf_teaser.png'/>
 
-### :warning: [Project Page](https://thomasneff.github.io/adanerf/) | [Paper (ArXiV)](https://arxiv.org/abs/2207.10312)
+### [Project Page](https://thomasneff.github.io/adanerf/) | [Paper (ArXiV)](https://arxiv.org/abs/2207.10312)
 
 ### Licensing
 The majority of this project is licensed under CC-BY-NC, except for adapted third-party code, which is available under separate license terms:
@@ -129,6 +129,13 @@ This script only requires the `--data` and `--logDir` options to locate the resu
 `src/evaluate.py` performs the evaluation on all subdirectories (if it hasn't done so already), so you only need to run this script once for a specific dataset and all containing results are evaluated sequentially.
 
 To aggregate the resulting outputs (MSE, SSIM, FLIP, FLOP / Pixel, Number of Parameters), you can use `src/comparison.py` to generate a resulting `.csv` file.
+
+### Generate new data
+
+We also provide basic script templates that can be used to generate data using Blender's python scripting engine. `blender_export_per_scene_stub.py` can either be copied into the Blender script editor or opened directly, and is used to configure parameters for view cell generation. It then calls `blender_export.py` to generate the images and depth data (for DONeRF) if desired.
+
+For the scripts to work properly, the name of the Camera needs to be set correctly. If depth buffers should be rendered, the `RENDER_IMG_NAME` variable needs to be set to the compositor node that exports the depth image in Blender. 
+Finally, the script uses the rendering settings (number of samples, rendering backend, CPU/GPU configs) that are set in the Blender project, so make sure that these are correct.
 
 ### Citation
 
